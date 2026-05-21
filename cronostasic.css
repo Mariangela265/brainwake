@@ -1,4 +1,4 @@
-/* ROOT PAGINE CRONOSTASI*/
+
 :root {
     --colore-verde-salvia: #6379A6;
     --colore-testo-chiaro: #ffffff;
@@ -7,18 +7,13 @@
     --font-testo: 'Inter', sans-serif;
 }
 
-
-
-
-* SEZIONE INTRODUTTIVA BLU */
 .sezione-blu-intro {
     background-color: var(--colore-blu-scuro) ;
-    
     color: var(--colore-testo-chiaro);
     color: #ffffff;
     padding: 64px;
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Due colonne: titolo a sinistra, testo a destra */
+    grid-template-columns: 1fr 2fr; 
     gap: 64px;
     align-items: start;
 }

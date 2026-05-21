@@ -1,4 +1,4 @@
-/* IL NUOVO ROOT PER LE PAGINE DEI DISTURBI */
+
 :root {
     --colore-verde-salvia: #4A5D4E;
     --colore-testo-chiaro: #ffffff;
@@ -7,14 +7,12 @@
     --font-testo: 'Inter', sans-serif;
 }
 
-
-/* SEZIONE INTRODUTTIVA VERDE */
 .sezione-verde-intro {
     background-color: var(--colore-forme) !important;
     color: var(--colore-testo-chiaro);
     padding: 64px;
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Due colonne: titolo a sinistra, testo a destra */
+    grid-template-columns: 1fr 2fr; 
     gap: 64px;
     align-items: start;
 }

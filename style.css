@@ -206,7 +206,6 @@ nav {
     display: block;
 }
 
-/* Le card della griglia di navigazione rimangono ridotte del 30% e centrate */
 .card-box {
     width: 70%;
     margin: 0 auto;
@@ -240,10 +239,10 @@ nav {
 
 .sezione-dettaglio {
     background-color: white;
-    overflow: hidden; /* Previene scrollbar orizzontali dovute allo shift dei contenuti */
+    overflow: hidden; 
 }
 
-/* Modificato: Padding verticale ridotto del 15% (da 128px a 108px) per avvicinare le sezioni */
+
 .sezione-dettaglio .contenuto {
     padding: 108px 80px;
     max-width: 1000px;
@@ -254,7 +253,7 @@ nav {
     align-items: center;
 }
 
-/* Base delle immagini di dettaglio */
+
 .dettaglio-immagine {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -268,14 +267,10 @@ nav {
 .dettaglio-immagine.forme  { background-color: var(--colore-forme); }
 .dettaglio-immagine.visioni{ background-color: var(--colore-visioni); }
 
-/* Base dei testi di dettaglio */
 .dettaglio-testo {
     transition: transform 0.4s ease;
 }
 
-/* --- LOGICA DI SHIFT (30% più a sinistra per immagine, 30% più a destra per testo) --- */
-
-/* Nella sezione standard: l'immagine è a sinistra (la spostiamo ancora più a sinistra) ed il testo a destra (lo spostiamo a destra) */
 .sezione-dettaglio .contenuto:not(.inverti) .dettaglio-immagine {
     transform: translateX(-15%);
 }
@@ -283,7 +278,6 @@ nav {
     transform: translateX(15%);
 }
 
-/* Nella sezione invertita: il testo è a sinistra (lo spostiamo a sinistra) e l'immagine è a destra (la spostiamo a destra) */
 .sezione-dettaglio .contenuto.inverti .dettaglio-testo {
     transform: translateX(-15%);
 }
@@ -291,7 +285,6 @@ nav {
     transform: translateX(15%);
 }
 
-/* Padding percentuale per mantenere l'immagine interna proporzionata */
 .dettaglio-immagine img {
     position: absolute;
     inset: 0;

@@ -1,5 +1,4 @@
 
-* SEZIONE INTRODUTTIVA BLU */
 .sezione-blu-intro {
     background-color: var(--colore-blu-scuro) ;
     
@@ -7,14 +6,14 @@
     color: #ffffff;
     padding: 64px;
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Due colonne: titolo a sinistra, testo a destra */
+    grid-template-columns: 1fr 2fr; 
     gap: 64px;
     align-items: start;
 }
 
 .sezione-blu-intro h2 {
     font-family: var(--font-titoli);
-    color: #ffffff; /IMPORTANTE/
+    color: #ffffff; 
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
@@ -27,11 +26,6 @@
     line-height: 1.6;
     margin: 0;
 }
-
-
-
-
-
 
 .visioni-intro-destra p {
     font-size: 1.08rem;
@@ -320,27 +314,3 @@
 }
 
 
-@media (max-width: 768px) {
-
-    .paralisi-sintomi-contenuto {
-        grid-template-columns: 1fr;
-        padding: 0 24px;
-        gap: 32px;
-    }
-
-    .paralisi-cause-contenuto,
-    .paralisi-rimedi-contenuto,
-    .paralisi-testimonianze-contenuto {
-        padding: 0 24px;
-    }
-
-    .paralisi-cause-grid,
-    .paralisi-rimedi-grid,
-    .paralisi-testimonianze-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .paralisi-rimedio-card--ampio {
-        grid-column: auto;
-    }
-}

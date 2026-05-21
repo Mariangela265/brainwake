@@ -284,28 +284,4 @@
     opacity: 0.5;
 }
 
-/
-@media (max-width: 768px) {
 
-    .paralisi-sintomi-contenuto {
-        grid-template-columns: 1fr;
-        padding: 0 24px;
-        gap: 32px;
-    }
-
-    .paralisi-cause-contenuto,
-    .paralisi-rimedi-contenuto,
-    .paralisi-testimonianze-contenuto {
-        padding: 0 24px;
-    }
-
-    .paralisi-cause-grid,
-    .paralisi-rimedi-grid,
-    .paralisi-testimonianze-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .paralisi-rimedio-card--ampio {
-        grid-column: auto;
-    }
-}
