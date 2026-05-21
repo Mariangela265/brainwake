@@ -1,0 +1,311 @@
+.soglie-intro-destra p {
+    font-size: 1.08rem;
+}
+
+
+.paralisi-causa-icona img,
+.paralisi-rimedio-icona img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.paralisi-sintomi-section {
+    background-color: var(--colore-sfondo);
+    border-top: 1px solid rgba(104, 102, 104, 0.1);
+    padding: 64px 0;
+}
+
+.paralisi-sintomi-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.paralisi-sintomi-sinistra h3 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 24px;
+}
+
+.paralisi-sintomi-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.paralisi-sintomi-lista li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.532rem;
+    color: var(--colore-testo);
+    opacity: 0.75;
+    padding-left: 16px;
+    position: relative;
+}
+
+.paralisi-sintomi-lista li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+
+
+.paralisi-card-azzurra {
+    background-color: var(--colore-soglie);
+    border-radius: 12px;
+    padding: 28px 32px;
+    color: #1a1a1a;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0.64);
+    transform-origin: top right;
+}
+
+.paralisi-card-azzurra h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.34rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.paralisi-punto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(26, 26, 26, 0.15);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.652rem;
+    color: #1a1a1a;
+}
+
+.punto-voce {
+    opacity: 0.6;
+}
+
+.punto-valore {
+    font-weight: 600;
+}
+
+
+.paralisi-cause-section {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 64px 0;
+}
+
+.paralisi-cause-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.paralisi-cause-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 40px;
+}
+
+.paralisi-cause-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.paralisi-causa-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.paralisi-causa-icona {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paralisi-causa-testo h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 1.235rem;
+    color: var(--colore-testo);
+    margin-bottom: 8px;
+}
+
+.paralisi-causa-testo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paralisi-causa-testo ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.14rem;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.paralisi-causa-testo ul li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+}
+
+
+.paralisi-rimedi-section {
+    background-color: var(--colore-sfondo);
+    border-top: 1px solid rgba(104, 102, 104, 0.1);
+    padding: 64px 0;
+}
+
+.paralisi-rimedi-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.paralisi-rimedi-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 40px;
+}
+
+.paralisi-rimedi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.paralisi-rimedio-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.paralisi-rimedio-card--ampio {
+    grid-column: 1 / -1;
+}
+
+.paralisi-rimedio-icona {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paralisi-rimedio-card h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 1.235rem;
+    color: var(--colore-testo);
+    margin-bottom: 6px;
+}
+
+.paralisi-rimedio-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.14rem;
+    color: var(--colore-testo);
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+
+.paralisi-testimonianze-section {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 64px 0;
+}
+
+.paralisi-testimonianze-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.paralisi-testimonianze-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 40px;
+}
+
+.paralisi-testimonianze-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+}
+
+.paralisi-testimonianza p {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.995rem;
+    line-height: 1.8;
+    color: var(--colore-testo);
+    opacity: 0.75;
+    margin-bottom: 16px;
+}
+
+.paralisi-fonte {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.878rem;
+    color: var(--colore-testo);
+    opacity: 0.5;
+}
+
+/
+@media (max-width: 768px) {
+
+    .paralisi-sintomi-contenuto {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+        gap: 32px;
+    }
+
+    .paralisi-cause-contenuto,
+    .paralisi-rimedi-contenuto,
+    .paralisi-testimonianze-contenuto {
+        padding: 0 24px;
+    }
+
+    .paralisi-cause-grid,
+    .paralisi-rimedi-grid,
+    .paralisi-testimonianze-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paralisi-rimedio-card--ampio {
+        grid-column: auto;
+    }
+}

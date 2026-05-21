@@ -1,0 +1,346 @@
+
+* SEZIONE INTRODUTTIVA BLU */
+.sezione-blu-intro {
+    background-color: var(--colore-blu-scuro) ;
+    
+    color: var(--colore-testo-chiaro);
+    color: #ffffff;
+    padding: 64px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Due colonne: titolo a sinistra, testo a destra */
+    gap: 64px;
+    align-items: start;
+}
+
+.sezione-blu-intro h2 {
+    font-family: var(--font-titoli);
+    color: #ffffff; /IMPORTANTE/
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sezione-blu-intro p {
+    font-family: var(--font-testo);
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+
+
+
+.visioni-intro-destra p {
+    font-size: 1.08rem;
+}
+
+
+.cronostasi-causa-icona img,
+.cronostasi-rimedio-icona img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.cronostasi-sintomi-section {
+    background-color: var(--colore-sfondo);
+    border-top: 1px solid rgba(104, 102, 104, 0.1);
+    padding: 64px 0;
+}
+
+.cronostasi-sintomi-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.cronostasi-sintomi-sinistra h3 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 24px;
+}
+
+.cronostasi-sintomi-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cronostasi-sintomi-lista li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.532rem;
+    color: var(--colore-testo);
+    opacity: 0.75;
+    padding-left: 16px;
+    position: relative;
+}
+
+.cronostasi-sintomi-lista li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+
+
+.cronostasi-card-azzurra {
+    background-color: var(--colore-soglie);
+    border-radius: 12px;
+    padding: 28px 32px;
+    color: #1a1a1a;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0.64);
+    transform-origin: top right;
+}
+
+.cronostasi-card-azzurra h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.34rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.cronostasi-punto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(26, 26, 26, 0.15);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.652rem;
+    color: #1a1a1a;
+}
+
+.punto-voce {
+    opacity: 0.6;
+}
+
+.punto-valore {
+    font-weight: 600;
+}
+
+
+.cronostasi-cause-section {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 64px 0;
+}
+
+.cronostasi-cause-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.cronostasi-cause-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 40px;
+}
+
+.cronostasi-cause-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.cronostasi-causa-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cronostasi-causa-icona {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cronostasi-causa-testo h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 1.235rem;
+    color: var(--colore-testo);
+    margin-bottom: 8px;
+}
+
+.cronostasi-causa-testo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cronostasi-causa-testo ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.14rem;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.cronostasi-causa-testo ul li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+}
+
+
+.cronostasi-rimedi-section {
+    background-color: var(--colore-sfondo);
+    border-top: 1px solid rgba(104, 102, 104, 0.1);
+    padding: 64px 0;
+}
+
+.cronostasi-rimedi-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.cronostasi-rimedi-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 40px;
+}
+
+.cronostasi-rimedi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.cronostasi-rimedio-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cronostasi-rimedio-card--ampio {
+    grid-column: 1 / -1;
+}
+
+.cronostasi-rimedio-icona {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cronostasi-rimedio-card h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 1.235rem;
+    color: var(--colore-testo);
+    margin-bottom: 6px;
+}
+
+.cronostasi-rimedio-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.14rem;
+    color: var(--colore-testo);
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+
+.cronostasi-testimonianze-section {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 64px 0;
+}
+
+.cronostasi-testimonianze-contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.cronostasi-testimonianze-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    margin-bottom: 40px;
+}
+
+.cronostasi-testimonianze-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+}
+
+.cronostasi-testimonianza p {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.995rem;
+    line-height: 1.8;
+    color: var(--colore-testo);
+    opacity: 0.75;
+    margin-bottom: 16px;
+}
+
+.cronostasi-fonte {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.878rem;
+    color: var(--colore-testo);
+    opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+
+    .paralisi-sintomi-contenuto {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+        gap: 32px;
+    }
+
+    .paralisi-cause-contenuto,
+    .paralisi-rimedi-contenuto,
+    .paralisi-testimonianze-contenuto {
+        padding: 0 24px;
+    }
+
+    .paralisi-cause-grid,
+    .paralisi-rimedi-grid,
+    .paralisi-testimonianze-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paralisi-rimedio-card--ampio {
+        grid-column: auto;
+    }
+}

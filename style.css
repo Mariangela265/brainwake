@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --colore-sfondo: #F0F0E8;
+    --colore-testo: #686668;
+    --colore-soglie: #B1CDF4;
+    --colore-forme: #A3B4B9;
+    --colore-visioni: #6379A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f6f2;
+    color: var(--colore-testo);
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.font-alexandria {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+}
+
+.font-alexandria-bold {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: var(--colore-sfondo);
+}
+
+.nav-logo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: var(--colore-testo);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: 'Alexandria', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--colore-testo);
+}
+
+.hero {
+    padding-top: 80px;
+    background-color: var(--colore-sfondo);
+}
+
+.hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 600px;
+}
+
+.hero-testo {
+    width: 42%;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-testo h1 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 16px;
+    color: var(--colore-testo);
+}
+
+.hero-testo p {
+    font-family: 'Alexandria', sans-serif;
+    font-size: 1.4rem;
+    color: var(--colore-testo);
+    max-width: 280px;
+}
+
+.hero-immagine {
+    width: 58%;
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.hero-immagine img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.hero-gradiente {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--colore-sfondo), transparent);
+}
+
+.sezione-intro {
+    background-color: white;
+}
+
+.sezione-intro .contenuto {
+    padding: 96px 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.intro-etichetta {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.intro-titolo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.2;
+    max-width: 280px;
+    color: var(--colore-testo);
+}
+
+.intro-testo {
+    padding-top: 32px;
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: #6b7280;
+}
+
+.griglia-navigazione {
+    padding: 96px 0;
+    background-color: var(--colore-sfondo);
+}
+
+.griglia-navigazione .contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 64px;
+    text-align: center;
+}
+
+.griglia-navigazione h3 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 64px;
+    color: var(--colore-testo);
+}
+
+.griglia-tre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.card-link {
+    display: block;
+}
+
+/* Le card della griglia di navigazione rimangono ridotte del 30% e centrate */
+.card-box {
+    width: 70%;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.card-box.soglie { background-color: var(--colore-soglie); }
+.card-box.forme  { background-color: var(--colore-forme); }
+.card-box.visioni{ background-color: var(--colore-visioni); }
+
+.card-box img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+.card-nome {
+    margin-top: 24px;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--colore-testo);
+}
+
+.sezione-dettaglio {
+    background-color: white;
+    overflow: hidden; /* Previene scrollbar orizzontali dovute allo shift dei contenuti */
+}
+
+/* Modificato: Padding verticale ridotto del 15% (da 128px a 108px) per avvicinare le sezioni */
+.sezione-dettaglio .contenuto {
+    padding: 108px 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+/* Base delle immagini di dettaglio */
+.dettaglio-immagine {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.dettaglio-immagine.soglie { background-color: var(--colore-soglie); }
+.dettaglio-immagine.forme  { background-color: var(--colore-forme); }
+.dettaglio-immagine.visioni{ background-color: var(--colore-visioni); }
+
+/* Base dei testi di dettaglio */
+.dettaglio-testo {
+    transition: transform 0.4s ease;
+}
+
+/* --- LOGICA DI SHIFT (30% più a sinistra per immagine, 30% più a destra per testo) --- */
+
+/* Nella sezione standard: l'immagine è a sinistra (la spostiamo ancora più a sinistra) ed il testo a destra (lo spostiamo a destra) */
+.sezione-dettaglio .contenuto:not(.inverti) .dettaglio-immagine {
+    transform: translateX(-15%);
+}
+.sezione-dettaglio .contenuto:not(.inverti) .dettaglio-testo {
+    transform: translateX(15%);
+}
+
+/* Nella sezione invertita: il testo è a sinistra (lo spostiamo a sinistra) e l'immagine è a destra (la spostiamo a destra) */
+.sezione-dettaglio .contenuto.inverti .dettaglio-testo {
+    transform: translateX(-15%);
+}
+.sezione-dettaglio .contenuto.inverti .dettaglio-immagine {
+    transform: translateX(15%);
+}
+
+/* Padding percentuale per mantenere l'immagine interna proporzionata */
+.dettaglio-immagine img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.5;
+    padding: 12%; 
+}
+
+.dettaglio-testo h4 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 24px;
+    color: var(--colore-testo);
+}
+
+.dettaglio-testo p {
+    opacity: 0.7;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.inverti .dettaglio-immagine { order: 2; }
+.inverti .dettaglio-testo    { order: 1; }
+
+.sezione-anatomia {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+.sezione-anatomia .contenuto {
+    padding: 128px 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.anatomia-testo {
+    width: 33%;
+}
+
+.anatomia-etichetta {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.anatomia-testo h2 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    color: var(--colore-testo);
+}
+
+.anatomia-testo p {
+    font-size: 0.875rem;
+    opacity: 0.6;
+    line-height: 1.8;
+}
+
+.anatomia-immagine {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #f3f4f6;
+}
+
+.anatomia-immagine img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lobo-etichetta {
+    position: absolute;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    padding-left: 8px;
+    border-left: 1px solid #9ca3af;
+    color: var(--colore-testo);
+}
+
+.sezione-citazione {
+    padding: 160px 32px;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.sezione-citazione .contenuto {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 40px;
+}
+
+.sezione-citazione h2 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: var(--colore-testo);
+    white-space: nowrap;
+}
+
+.sezione-citazione p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    line-height: 1.8;
+    font-style: italic;
+    border-left: none;
+    transform: translateY(48px);
+}
+
+footer {
+    padding: 80px 32px;
+    background-color: var(--colore-sfondo);
+    border-top: 1px solid #f3f4f6;
+}
+
+footer .contenuto {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.footer-logo {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 16px;
+    color: var(--colore-testo);
+}
+
+.footer-sottotitolo {
+    font-size: 0.6rem;
+    opacity: 0.4;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.6;
+}
+
+.footer-colonna h5 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 16px;
+}
+
+.footer-colonna ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-colonna li span {
+    display: block;
+    font-size: 0.875rem;
+    opacity: 0.6;
+}
+
+.footer-colonna li a {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--colore-testo);
+    transition: color 0.2s;
+}
+
+.footer-colonna li a:hover {
+    color: #9ca3af;
+}
+
