@@ -1,4 +1,4 @@
-soglie-intro-destra p {
+.soglie-intro-destra p {
     font-size: 1.08rem;
 }
 
@@ -11,99 +11,6 @@ soglie-intro-destra p {
     display: block;
 }
 
-
-.paralisi-sintomi-section {
-    background-color: var(--colore-sfondo);
-    border-top: 1px solid rgba(104, 102, 104, 0.1);
-    padding: 64px 0;
-}
-
-.paralisi-sintomi-contenuto {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: start;
-}
-
-.paralisi-sintomi-sinistra h3 {
-    font-family: 'Alexandria', sans-serif;
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 1.2;
-    color: var(--colore-testo);
-    margin-bottom: 24px;
-}
-
-.paralisi-sintomi-lista {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.paralisi-sintomi-lista li {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.532rem;
-    color: var(--colore-testo);
-    opacity: 0.75;
-    padding-left: 16px;
-    position: relative;
-}
-
-.paralisi-sintomi-lista li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    opacity: 0.5;
-}
-
-
-.paralisi-card-azzurra {
-    background-color: var(--colore-soglie);
-    border-radius: 12px;
-    padding: 28px 32px;
-    color: #1a1a1a;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: scale(0.64);
-    transform-origin: top right;
-}
-
-.paralisi-card-azzurra h4 {
-    font-family: 'Alexandria', sans-serif;
-    font-weight: 600;
-    font-size: 2.34rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin-bottom: 20px;
-    color: #1a1a1a;
-}
-
-.paralisi-punto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-top: 1px solid rgba(26, 26, 26, 0.15);
-    font-family: 'Inter', sans-serif;
-    font-size: 2.652rem;
-    color: #1a1a1a;
-}
-
-.punto-voce {
-    opacity: 0.6;
-}
-
-.punto-valore {
-    font-weight: 600;
-}
 
 
 .paralisi-cause-section {
@@ -140,7 +47,6 @@ soglie-intro-destra p {
 }
 
 .paralisi-causa-icona {
-    flex-shrink: 0;
     width: 48px;
     height: 48px;
     display: flex;
@@ -170,7 +76,6 @@ soglie-intro-destra p {
 }
 
 .paralisi-causa-testo ul li::before {
-    content: '-';
     position: absolute;
     left: 0;
 }
@@ -205,7 +110,6 @@ soglie-intro-destra p {
 
 .paralisi-rimedio-card {
     display: flex;
-    align-items: flex-start;
     gap: 20px;
 }
 
@@ -284,28 +188,114 @@ soglie-intro-destra p {
     opacity: 0.5;
 }
 
-/
+
+
 @media (max-width: 768px) {
 
+   
     .paralisi-sintomi-contenuto {
-        grid-template-columns: 1fr;
-        padding: 0 24px;
-        gap: 32px;
+        grid-template-columns: 1fr !important; 
+        padding: 0 24px !important;
+        gap: 32px !important;
     }
 
-    .paralisi-cause-contenuto,
-    .paralisi-rimedi-contenuto,
+    .paralisi-sintomi-sinistra h3 {
+        font-size: 1.6rem !important; 
+        margin-bottom: 16px !important;
+    }
+
+    .paralisi-sintomi-lista li {
+        font-size: 1.1rem !important; 
+        gap: 12px !important;
+    }
+
+    
+    .paralisi-card-azzurra {
+        transform: scale(1) !important; 
+        transform-origin: center center !important;
+        aspect-ratio: auto !important; 
+        padding: 24px !important;
+    }
+
+    .paralisi-card-azzurra h4 {
+        font-size: 1.3rem !important;
+    }
+
+    .paralisi-punto {
+        font-size: 1.4rem !important; 
+    }
+
+    
+    .paralisi-cause-section {
+        padding: 48px 0 !important;
+    }
+
+    .paralisi-cause-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .paralisi-cause-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .paralisi-cause-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 24px !important;
+    }
+
+    .paralisi-causa-card {
+        gap: 16px !important;
+    }
+
+    
+    .paralisi-rimedi-section {
+        padding: 48px 0 !important;
+    }
+
+    .paralisi-rimedi-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .paralisi-rimedi-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .paralisi-rimedi-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 24px !important;
+    }
+
+    .paralisi-rimedio-card h4 {
+        font-size: 1.15rem !important;
+    }
+
+    .paralisi-rimedio-card p {
+        font-size: 0.95rem !important;
+    }
+
+    
+    .paralisi-testimonianze-section {
+        padding: 48px 0 !important;
+    }
+
     .paralisi-testimonianze-contenuto {
-        padding: 0 24px;
+        padding: 0 24px !important;
     }
 
-    .paralisi-cause-grid,
-    .paralisi-rimedi-grid,
+    .paralisi-testimonianze-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 32px !important;
+    }
+
     .paralisi-testimonianze-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important; 
+        gap: 32px !important;
     }
 
-    .paralisi-rimedio-card--ampio {
-        grid-column: auto;
+    .paralisi-testimonianza p {
+        font-size: 0.95rem !important;
+        margin-bottom: 8px !important;
     }
 }

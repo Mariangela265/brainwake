@@ -1,4 +1,10 @@
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 .soglie-hero {
     padding-top: 72px;
     position: relative;
@@ -20,7 +26,6 @@
     display: block;
 }
 
-
 .soglie-hero-telo {
     position: absolute;
     inset: 0;
@@ -35,14 +40,6 @@
     left: 64px;
     transform: translateY(-50%);
     z-index: 2;
-}
-
-.soglie-icona {
-    width: 10px;
-    height: 10px;
-    margin-bottom: 6px;
-    
-    object-fit: contain;
 }
 
 .soglie-etichetta {
@@ -85,6 +82,7 @@
     font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    color: #333333 !important; 
     opacity: 0.5;
     font-weight: 600;
     display: block;
@@ -97,15 +95,15 @@
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 1.2;
-    color: var(--colore-sfondo);
+    color: #333333 !important; 
 }
 
 .soglie-intro-destra p {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     line-height: 1.9;
-    color: var(--colore-sfondo);
-    opacity: 0.75;
+    color: #333333 !important; 
+    opacity: 1 !important;
     padding-top: 40px;
 }
 
@@ -142,7 +140,7 @@
     aspect-ratio: 4 / 3;
     border-radius: 8px;
     overflow: hidden;
-    background-color: var(--colore-visioni);
+    background-color: var(--colore-visioni); 
 }
 
 .soglie-articolo-immagine img {
@@ -178,64 +176,99 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: white;
-    background-color: var(--colore-visioni);
+    background-color: var(--colore-visioni); 
     border: 1px solid var(--colore-visioni);
     padding: 10px 24px;
     border-radius: 2px;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.soglie-btn:hover,
-.soglie-btn:active,
-.soglie-btn:visited,
-.soglie-btn:focus {
+.soglie-btn:hover{
+    background-color: #214282; 
+    border-color: #214282;
     color: white;
-    background-color: var(--colore-soglie);
-    outline: none;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+.soglie-btn:active,
+.soglie-btn:focus {
+    outline: none;
+    transform: translateY(-2px);
+}
+
 
 @media (max-width: 768px) {
 
     .soglie-hero-immagine {
-        height: 280px;
+        height: 340px !important; 
     }
 
     .soglie-hero-box {
-        padding: 32px 24px;
+        padding: 32px 24px !important;
+    }
+
+    .soglie-hero-testo {
+        left: 24px !important; 
+        width: calc(100% - 48px) !important;
     }
 
     .soglie-hero-testo h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem !important; 
     }
 
     .soglie-intro-contenuto {
-        grid-template-columns: 1fr;
-        padding: 48px 24px 0;
-        gap: 24px;
+        grid-template-columns: 1fr !important;
+        padding: 48px 24px 40px !important;
+        gap: 16px !important;
+    }
+
+    .soglie-intro-sinistra h2 {
+        font-size: 1.6rem !important; 
+        line-height: 1.3 !important;
     }
 
     .soglie-intro-destra p {
-        padding-top: 0;
+        padding-top: 0 !important; 
+        font-size: 0.9rem !important;
+        line-height: 1.7 !important;
     }
 
     .soglie-articoli {
-        padding: 64px 0;
+        padding: 48px 0 !important;
     }
 
     .soglie-articoli-contenuto {
-        padding: 0 24px;
-        gap: 56px;
+        padding: 0 24px !important;
+        gap: 56px !important;
     }
 
     .soglie-articolo {
-        grid-template-columns: 1fr;
-        gap: 24px;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
     }
 
     .soglie-articolo.inverti .soglie-articolo-immagine {
-        order: 1;
+        order: 1 !important;
     }
     .soglie-articolo.inverti .soglie-articolo-testo {
-        order: 2;
+        order: 2 !important;
+    }
+    
+    .soglie-articolo-testo h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .soglie-articolo-testo p {
+        font-size: 0.85rem !important;
+        line-height: 1.7 !important;
+        margin-bottom: 24px !important;
+    }
+    
+    .soglie-btn {
+        width: 100% !important; 
+        text-align: center !important;
     }
 }

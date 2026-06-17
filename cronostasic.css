@@ -1,16 +1,16 @@
 
 :root {
-    --colore-verde-salvia: #6379A6;
-    --colore-testo-chiaro: #ffffff;
-    --colore-testo-scuro: #1a1a1a;
-    --font-titoli: 'Alexandria', sans-serif;
-    --font-testo: 'Inter', sans-serif;
+    --colore-visioni: #6379A6 !important;
+    --colore-testo-chiaro: #ffffff !important;
+    --colore-testo-scuro: #333333 !important;
+    --font-titoli: 'Alexandria', sans-serif !important;
+    --font-testo: 'Inter', sans-serif !important;
 }
 
 .sezione-blu-intro {
-    background-color: var(--colore-blu-scuro) ;
-    color: var(--colore-testo-chiaro);
-    color: #ffffff;
+    background-color: #6379A6 !important;
+    color:#333333  !important;
+    
     padding: 64px;
     display: grid;
     grid-template-columns: 1fr 2fr; 
@@ -19,16 +19,19 @@
 }
 
 .sezione-blu-intro h2 {
+    background-color: transparent !important;
     font-family: var(--font-titoli);
-    color: #ffffff; /IMPORTANTE/
+    color:#333333 !important ;
     font-size: 2rem;
-    text-transform: uppercase;
+    
     margin: 0;
 }
 
-.sezione-blu-intro p {
+.sezione-blu-intro p,
+.visioni-intro-destra p {
+    background-color: transparent !important;
     font-family: var(--font-testo);
-    color: #ffffff;
+    color:#333333 !important ;
     font-size: 1.15rem;
     line-height: 1.6;
     margin: 0;
@@ -40,6 +43,7 @@
 
 .visioni-intro-destra p {
     font-size: 1.08rem;
+    color: #000000;
 }
 
 
@@ -104,7 +108,7 @@
 
 
 .cronostasi-card-azzurra {
-    background-color: var(--colore-soglie);
+    background-color: var(--colore-visioni);
     border-radius: 12px;
     padding: 28px 32px;
     color: #1a1a1a;
@@ -327,25 +331,120 @@
 
 @media (max-width: 768px) {
 
-    .paralisi-sintomi-contenuto {
-        grid-template-columns: 1fr;
-        padding: 0 24px;
-        gap: 32px;
+   
+    .sezione-blu-intro {
+        grid-template-columns: 1fr !important; 
+        padding: 40px 24px !important;
+        gap: 16px !important;
+    }
+    
+    .sezione-blu-intro h2 {
+        font-size: 1.6rem !important;
+    }
+    
+    .sezione-blu-intro p,
+    .visioni-intro-destra p {
+        font-size: 1rem !important;
     }
 
-    .paralisi-cause-contenuto,
-    .paralisi-rimedi-contenuto,
-    .paralisi-testimonianze-contenuto {
-        padding: 0 24px;
+    
+    .cronostasi-sintomi-contenuto {
+        grid-template-columns: 1fr !important; 
+        padding: 0 24px !important;
+        gap: 32px !important;
     }
 
-    .paralisi-cause-grid,
-    .paralisi-rimedi-grid,
-    .paralisi-testimonianze-grid {
-        grid-template-columns: 1fr;
+    .cronostasi-sintomi-sinistra h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 16px !important;
     }
 
-    .paralisi-rimedio-card--ampio {
-        grid-column: auto;
+    .cronostasi-sintomi-lista li {
+        font-size: 1.1rem !important; 
+    }
+
+    
+    .cronostasi-card-azzurra {
+        transform: scale(1) !important; 
+        transform-origin: center center !important;
+        aspect-ratio: auto !important;
+        padding: 24px !important;
+    }
+
+    .cronostasi-card-azzurra h4 {
+        font-size: 1.3rem !important;
+    }
+
+    .cronostasi-punto {
+        font-size: 1.4rem !important; 
+    }
+
+    
+    .cronostasi-cause-section {
+        padding: 48px 0 !important;
+    }
+
+    .cronostasi-cause-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .cronostasi-cause-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .cronostasi-cause-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 24px !important;
+    }
+
+    
+    .cronostasi-rimedi-section {
+        padding: 48px 0 !important;
+    }
+
+    .cronostasi-rimedi-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .cronostasi-rimedi-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .cronostasi-rimedi-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 24px !important;
+    }
+
+    .cronostasi-rimedio-card h4 {
+        font-size: 1.15rem !important;
+    }
+
+    .cronostasi-rimedio-card p {
+        font-size: 0.95rem !important;
+    }
+
+    
+    .cronostasi-testimonianze-section {
+        padding: 48px 0 !important;
+    }
+
+    .cronostasi-testimonianze-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .cronostasi-testimonianze-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 32px !important;
+    }
+
+    .cronostasi-testimonianze-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 32px !important;
+    }
+
+    .cronostasi-testimonianza p {
+        font-size: 0.95rem !important;
     }
 }

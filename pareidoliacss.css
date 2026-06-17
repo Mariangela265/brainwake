@@ -1,9 +1,9 @@
 
 .sezione-blu-intro {
-    background-color: var(--colore-blu-scuro) ;
+    background-color: var(--colore-visioni) ;
     
-    color: var(--colore-testo-chiaro);
-    color: #ffffff;
+    color: var(--colore-testo-scuro);
+    
     padding: 64px;
     display: grid;
     grid-template-columns: 1fr 2fr; 
@@ -13,23 +13,23 @@
 
 .sezione-blu-intro h2 {
     font-family: var(--font-titoli);
-    color: #ffffff; 
+    color: #333333 !important ; 
     font-size: 2rem;
-    text-transform: uppercase;
+    
     margin: 0;
 }
 
-.sezione-blu-intro p {
+.sezione-blu-intro p, 
+.visioni-intro-destra{
     font-family: var(--font-testo);
-    color: #ffffff;
+    color: #333333 !important ;
     font-size: 1.15rem;
     line-height: 1.6;
     margin: 0;
 }
 
-.visioni-intro-destra p {
-    font-size: 1.08rem;
-}
+
+
 
 
 .cronostasi-causa-icona img,
@@ -314,3 +314,122 @@
 }
 
 
+@media (max-width: 768px) {
+
+    
+    .sezione-blu-intro {
+        grid-template-columns: 1fr !important; 
+        padding: 40px 24px !important;
+        gap: 16px !important;
+    }
+    
+    .sezione-blu-intro h2 {
+        font-size: 1.6rem !important;
+    }
+    
+    .sezione-blu-intro p,
+    .visioni-intro-destra p {
+        font-size: 1rem !important;
+    }
+
+   
+    .cronostasi-sintomi-contenuto {
+        grid-template-columns: 1fr !important; 
+        padding: 0 24px !important;
+        gap: 32px !important;
+    }
+
+    .cronostasi-sintomi-sinistra h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 16px !important;
+    }
+
+    .cronostasi-sintomi-lista li {
+        font-size: 1.1rem !important; 
+    }
+
+    
+    .cronostasi-card-azzurra {
+        transform: scale(1) !important; 
+        transform-origin: center center !important;
+        aspect-ratio: auto !important;
+        padding: 24px !important;
+    }
+
+    .cronostasi-card-azzurra h4 {
+        font-size: 1.3rem !important;
+    }
+
+    .cronostasi-punto {
+        font-size: 1.4rem !important; 
+    }
+
+ 
+    .cronostasi-cause-section {
+        padding: 48px 0 !important;
+    }
+
+    .cronostasi-cause-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .cronostasi-cause-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .cronostasi-cause-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 24px !important;
+    }
+
+    
+    .cronostasi-rimedi-section {
+        padding: 48px 0 !important;
+    }
+
+    .cronostasi-rimedi-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .cronostasi-rimedi-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .cronostasi-rimedi-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 24px !important;
+    }
+
+    .cronostasi-rimedio-card h4 {
+        font-size: 1.15rem !important;
+    }
+
+    .cronostasi-rimedio-card p {
+        font-size: 0.95rem !important;
+    }
+
+    
+    .cronostasi-testimonianze-section {
+        padding: 48px 0 !important;
+    }
+
+    .cronostasi-testimonianze-contenuto {
+        padding: 0 24px !important;
+    }
+
+    .cronostasi-testimonianze-titolo {
+        font-size: 1.6rem !important;
+        margin-bottom: 32px !important;
+    }
+
+    .cronostasi-testimonianze-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 32px !important;
+    }
+
+    .cronostasi-testimonianza p {
+        font-size: 0.95rem !important;
+    }
+}

@@ -74,6 +74,12 @@ nav {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--colore-testo);
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4da9ff; 
+    opacity: 1;     
 }
 
 .hero {
@@ -86,7 +92,6 @@ nav {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     min-height: 600px;
 }
 
@@ -145,9 +150,17 @@ nav {
     padding: 96px 32px;
     max-width: 1280px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    
+}
+
+.linea-titolo{
+    width: 60%; 
+    height: 1px;
+    background-color: #e5e7eb; 
+    margin-top: 24px;
 }
 
 .intro-etichetta {
@@ -165,19 +178,42 @@ nav {
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.2;
-    max-width: 280px;
     color: var(--colore-testo);
+    max-width: 100%;
+    white-space: normal;
 }
 
-.intro-testo {
-    padding-top: 32px;
+.sezione-intro .contenuto p {
     font-size: 0.875rem;
     line-height: 1.8;
     color: #6b7280;
+    margin-bottom: 32px; 
+}
+
+
+.sezione-intro .contenuto p:last-child {
+    margin-bottom: 0;
+}
+
+
+.intro-testo {
+   width: 60%;                
+    display: flex;
+    flex-direction: column;
+    gap: 10px;                 
+    padding-top: 26px !important;
+    
+}
+
+.intro-testo-p {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #6b7280;
+    padding-top: 8px;
 }
 
 .griglia-navigazione {
-    padding: 96px 0;
+    padding: 50px 0;
     background-color: var(--colore-sfondo);
 }
 
@@ -196,46 +232,6 @@ nav {
     color: var(--colore-testo);
 }
 
-.griglia-tre {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px;
-}
-
-.card-link {
-    display: block;
-}
-
-.card-box {
-    width: 70%;
-    margin: 0 auto;
-    aspect-ratio: 1 / 1;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.5s;
-}
-
-.card-box.soglie { background-color: var(--colore-soglie); }
-.card-box.forme  { background-color: var(--colore-forme); }
-.card-box.visioni{ background-color: var(--colore-visioni); }
-
-.card-box img {
-    width: 75%;
-    height: 75%;
-    object-fit: contain;
-}
-
-.card-nome {
-    margin-top: 24px;
-    font-family: 'Alexandria', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: var(--colore-testo);
-}
 
 .sezione-dettaglio {
     background-color: white;
@@ -244,7 +240,7 @@ nav {
 
 
 .sezione-dettaglio .contenuto {
-    padding: 108px 80px;
+    padding: 80px 80px;
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -260,7 +256,6 @@ nav {
     border-radius: 12px;
     overflow: hidden;
     position: relative;
-    transition: transform 0.4s ease;
 }
 
 .dettaglio-immagine.soglie { background-color: var(--colore-soglie); }
@@ -318,16 +313,30 @@ nav {
 }
 
 .sezione-anatomia .contenuto {
-    padding: 128px 32px;
+    padding: 60px 32px;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    gap: 64px;
+   flex-direction: column;
 }
 
+.anatomia-titolo{
+   width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-top: 3%; 
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 600; 
+    font-size: 2rem;
+}
 .anatomia-testo {
-    width: 33%;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+    margin-top: 0% ;
+
 }
 
 .anatomia-etichetta {
@@ -340,30 +349,36 @@ nav {
     margin-bottom: 8px;
 }
 
-.anatomia-testo h2 {
-    font-family: 'Alexandria', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 32px;
-    color: var(--colore-testo);
+.sezione-anatomia.anatomia-testo h2 {
+    margin-bottom: 24px;
 }
 
 .anatomia-testo p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     opacity: 0.6;
     line-height: 1.8;
 }
 
+.sezione-anatomia .contenuto > p,
+.sezione-anatomia .anatomia-descrizione {
+   width: 100% !important; 
+    max-width: 100% !important; 
+    font-size: 0.9rem;
+    opacity: 0.7;
+    line-height: 1.8;
+    color: #6b7280;
+    margin-top: 14px;
+}
+
 .anatomia-immagine {
-    width: 50%;
-    max-width: 500px;
-    margin: 0 auto;
+  
+    width: 100% !important; 
+    max-width: 1100px !important; 
+    margin:  0 auto !important; 
     position: relative;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16 / 9; 
     overflow: hidden;
     border-radius: 12px;
-    background-color: #f3f4f6;
 }
 
 .anatomia-immagine img {
@@ -371,7 +386,7 @@ nav {
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .lobo-etichetta {
@@ -381,7 +396,6 @@ nav {
     letter-spacing: 0.15em;
     font-weight: 700;
     padding-left: 8px;
-    border-left: 1px solid #9ca3af;
     color: var(--colore-testo);
 }
 
@@ -397,7 +411,6 @@ nav {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     gap: 40px;
 }
 
@@ -438,7 +451,6 @@ footer .contenuto {
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: -0.05em;
-    line-height: 1;
     margin-bottom: 16px;
     color: var(--colore-testo);
 }
@@ -486,3 +498,135 @@ footer .contenuto {
     color: #9ca3af;
 }
 
+@media (max-width: 768px) {
+
+   
+    nav {
+        padding: 16px !important;
+        flex-direction: column !important; 
+        gap: 12px !important;
+        position: relative !important; 
+    }
+    .nav-links {
+        gap: 16px !important; 
+    }
+    .nav-links a {
+        font-size: 0.7rem !important;
+    }
+
+    
+    .hero {
+        padding-top: 24px !important;
+    }
+    .hero-inner {
+        flex-direction: column !important; 
+        min-height: auto !important;
+    }
+    .hero-testo {
+        width: 100% !important;
+        padding: 32px 24px !important;
+        text-align: center !important;
+    }
+    .hero-testo h1 {
+        font-size: 3.5rem !important; 
+    }
+    .hero-testo p {
+        max-width: 100% !important;
+        font-size: 1.1rem !important;
+    }
+    .hero-immagine {
+        width: 100% !important;
+        height: 250px !important; 
+        min-height: auto !important;
+    }
+    .hero-gradiente {
+        
+        background: linear-gradient(to bottom, var(--colore-sfondo), transparent) !important;
+    }
+
+    
+    .sezione-intro .contenuto {
+        flex-direction: column !important;
+        padding: 48px 24px !important;
+        gap: 24px !important;
+    }
+    .sezione-intro .contenuto > div:first-child,
+    .sezione-intro .contenuto .soglie-intro-sinistra,
+    .intro-testo {
+        width: 100% !important; 
+    }
+    .intro-titolo {
+        font-size: 1.6rem !important;
+    }
+    .linea-titolo {
+        width: 100% !important; 
+    }
+
+    
+    .griglia-navigazione {
+        padding: 48px 0 !important;
+    }
+    .griglia-navigazione h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 32px !important;
+    }
+    .griglia-tre {
+        grid-template-columns: 1fr !important; 
+        gap: 32px !important;
+        padding: 0 24px !important;
+    }
+    .card-box {
+        width: 60% !important; 
+    }
+
+   
+    .sezione-dettaglio .contenuto {
+        grid-template-columns: 1fr !important; 
+        padding: 48px 24px !important;
+        gap: 32px !important;
+    }
+    
+    .sezione-dettaglio .contenuto:not(.inverti) .dettaglio-immagine,
+    .sezione-dettaglio .contenuto:not(.inverti) .dettaglio-testo,
+    .sezione-dettaglio .contenuto.inverti .dettaglio-testo,
+    .sezione-dettaglio .contenuto.inverti .dettaglio-immagine {
+        transform: translateX(0) !important;
+    }
+    .inverti .dettaglio-immagine { order: 1 !important; } 
+    .inverti .dettaglio-testo    { order: 2 !important; } 
+    .dettaglio-testo h4 {
+        font-size: 2rem !important;
+    }
+
+   
+    .sezione-anatomia .contenuto {
+        padding: 48px 24px !important;
+    }
+    .anatomia-immagine {
+        aspect-ratio: 4 / 3 !important; 
+    }
+    .lobo-etichetta {
+        font-size: 0.45rem !important; 
+    }
+
+    
+    .sezione-citazione {
+        padding: 64px 24px !important;
+    }
+    .sezione-citazione .contenuto {
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+    .sezione-citazione h2 {
+        font-size: 1.5rem !important;
+        white-space: normal !important; 
+    }
+    .sezione-citazione p {
+        transform: translateY(0) !important; 
+    }
+    footer .contenuto {
+        grid-template-columns: 1fr !important; 
+        gap: 32px !important;
+        padding: 0 24px !important;
+    }
+}

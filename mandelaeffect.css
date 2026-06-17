@@ -2,8 +2,8 @@
 .sezione-blu-intro {
     background-color: var(--colore-blu-scuro) ;
     
-    color: var(--colore-testo-chiaro);
-    color: #ffffff;
+    color: var(--colore-testo-scuro);
+    
     padding: 64px;
     display: grid;
     grid-template-columns: 1fr 2fr; 
@@ -13,7 +13,7 @@
 
 .sezione-blu-intro h2 {
     font-family: var(--font-titoli);
-    color: #ffffff; 
+    color: #333333 !important; 
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
@@ -21,7 +21,7 @@
 
 .sezione-blu-intro p {
     font-family: var(--font-testo);
-    color: #ffffff;
+    color: #333333 !important;
     font-size: 1.15rem;
     line-height: 1.6;
     margin: 0;
